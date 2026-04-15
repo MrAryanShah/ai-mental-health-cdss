@@ -1,20 +1,37 @@
 # AI Mental Health CDSS
 
-AI-based Clinical Decision Support System (CDSS) for predicting mental health conditions using Machine Learning.
+AI-based Clinical Decision Support System (CDSS) that predicts mental health conditions using Machine Learning and provides professional lifestyle recommendations with downloadable clinical report.
 
-This web application analyzes lifestyle factors such as sleep, stress level, work hours, screen time, exercise habits and social interaction to predict mental health status and generate a professional clinical report.
+---
+
+## Live Demo
+https://ai-mental-health-cdss.onrender.com
+
+---
+
+## Overview
+
+This project uses Machine Learning to analyze lifestyle and behavioral parameters such as sleep patterns, stress levels, work hours, social interaction and screen exposure to predict possible mental health conditions.
+
+The system generates:
+
+• AI prediction result  
+• Clinical explanation  
+• Lifestyle insights  
+• Graph visualization  
+• Downloadable PDF report  
 
 ---
 
 ## Features
 
-• AI-based mental health prediction  
-• Machine Learning model (Random Forest)  
-• Professional web interface  
-• Lifestyle analysis graph  
-• PDF report generation  
-• Real-time prediction  
-• Clean and user-friendly UI  
+AI-powered mental health prediction  
+Professional UI design  
+Graph visualization of lifestyle parameters  
+PDF clinical report generation  
+Flask-based web application  
+Real-time prediction system  
+Deployed on cloud (Render)
 
 ---
 
@@ -37,15 +54,15 @@ Age
 Sleep Hours  
 Stress Level  
 Exercise Level  
-Screen Time  
 Work Hours  
+Screen Time  
 Social Interaction Score  
 
 ---
 
 ## Output
 
-Mental Health Prediction:
+Prediction Categories:
 
 Healthy  
 Stress  
@@ -54,19 +71,20 @@ Depression
 
 Includes:
 
-Clinical explanation  
-Graph visualization  
-Downloadable PDF report  
+Clinical interpretation  
+Lifestyle recommendations  
+Graph report  
+Downloadable PDF  
 
 ---
 
-## Installation
+## Installation (Local Setup)
 
 Clone repository:
 
 git clone https://github.com/MrAryanShah/ai-mental-health-cdss.git
 
-Install requirements:
+Install dependencies:
 
 pip install -r requirements.txt
 
@@ -85,22 +103,24 @@ http://127.0.0.1:5050
 ai-mental-health-cdss  
 │  
 ├── app.py  
+├── model.py  
 ├── requirements.txt  
+│  
 ├── templates  
 │      └── index.html  
 │  
-└── static  
-       └── graph.png  
+├── static  
+│      └── graph.png  
 
 ---
 
 ## Future Improvements
 
-More dataset integration  
-Deep Learning model  
-User login system  
+Deep learning integration  
+User authentication system  
 Doctor dashboard  
-Cloud database  
+Database integration  
+Mobile responsive UI  
 
 ---
 
