@@ -5,7 +5,7 @@ AI-based Clinical Decision Support System (CDSS) that predicts mental health con
 ---
 
 ## Live Demo
-https://ai-mental-health-cdss.onrender.com
+https://mental-health-cdss.onrender.com
 
 ---
 
