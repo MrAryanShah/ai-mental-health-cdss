@@ -5,27 +5,29 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/https://github.com/MrAryanShah/ai-mental-health-cdss/python-project.git'
+                git branch: 'main', url: 'https://github.com/MrAryanShah/ai-mental-health-cdss.git'
             }
         }
 
         stage('Build') {
             steps {
-                sh 'python3 --version'
-                sh 'pip3 install -r requirements.txt'
+                dir('python-project') {
+                    sh 'python3 --version'
+                    sh 'pip3 install -r requirements.txt'
+                }
             }
         }
 
         stage('Test') {
             steps {
-                sh 'python3 -m unittest discover'
+                dir('python-project') {
+                    sh 'python3 -m unittest discover'
+                }
             }
         }
-
     }
 
     post {
-
         success {
             echo 'Build Successful!'
         }
@@ -37,6 +39,5 @@ pipeline {
         always {
             echo 'Pipeline Execution Completed.'
         }
-
     }
 }
